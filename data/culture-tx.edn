@@ -1,0 +1,14 @@
+;; data/culture-tx.edn — DataScript tx-data derived from src/culture/facts.cljc
+;; `culture.facts/catalog` (ADR-2607171400 addendum 2, Wave 1 country-level).
+;; Same shape across every cloud-itonami-iso3166-* sibling. Do not hand-edit;
+;; regenerate from the catalog.
+
+[
+#:culture{:id "mkd.dish.tavce-gravce", :name "Tavče gravče", :country "MKD", :kind :dish, :summary "Traditional dish of butter beans baked in an earthenware pot, recognized as the national dish of North Macedonia.", :url "https://en.wikipedia.org/wiki/Tav%C4%8De_grav%C4%8De", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "mkd.dish.pastrmajlija", :name "Pastrmajlija", :country "MKD", :kind :dish, :summary "Macedonian bread pie made from dough, cheese, eggs and meat, originating in and remaining popular in cities such as Štip, Veles and Sveti Nikole.", :url "https://en.wikipedia.org/wiki/Pastrmajlija", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "mkd.dish.ajvar", :name "Ajvar", :country "MKD", :kind :dish, :summary "Condiment of sweet bell peppers and eggplant produced in most Balkan countries including North Macedonia; \"Macedonian Ajvar\" is registered with WIPO as a distinct brand name.", :url "https://en.wikipedia.org/wiki/Ajvar", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "mkd.beverage.macedonian-wine", :name "Macedonian wine", :country "MKD", :kind :beverage, :summary "Wine produced across roughly 22,400 hectares of vineyards in North Macedonia, with red wine comprising about 80 percent of output from three distinct wine regions.", :url "https://en.wikipedia.org/wiki/Macedonian_wine", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "mkd.product.prilep-tobacco", :name "Prilep tobacco", :country "MKD", :kind :product, :summary "Prilep is a regional centre for high-quality oriental tobacco, a traditional cash crop of the city used by major cigarette makers after local processing.", :url "https://en.wikipedia.org/wiki/Prilep", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "mkd.festival.galicnik-wedding", :name "Galičnik Wedding Festival", :country "MKD", :kind :festival, :summary "Annual cultural festival in the village of Galičnik near Debar, where selected couples marry in traditional style, historically held around St. Peter and Paul's Day.", :url "https://en.wikipedia.org/wiki/Gali%C4%8Dnik_Wedding_Festival", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "mkd.heritage.ohrid", :name "Ohrid", :country "MKD", :kind :heritage, :summary "Ohrid and Lake Ohrid were inscribed as UNESCO Cultural and Natural World Heritage Sites in 1979 and 1980 respectively.", :url "https://en.wikipedia.org/wiki/Ohrid", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+]
