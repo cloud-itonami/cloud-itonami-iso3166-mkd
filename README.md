@@ -1,11 +1,38 @@
 # cloud-itonami-iso3166-mkd
 
-**MKD**: North Macedonia.
+Open ISO 3166 Blueprint for **MKD**: North Macedonia.
 
-- e-nabavki
-- Trade Registry
+- Procurement: Биро за јавни набавки (Bureau for Public Procurement) /
+  Електронски систем за јавни набавки (ЕСЈН, e-nabavki.gov.mk)
+- Business/tax: Централен регистар (Central Registry, ЕМБС company
+  registration) + Управа за јавни приходи (Public Revenue Office, ЕДБ
+  tax identity) — two separate authorities, two separate numbers
+- General compliance: Закон за работните односи (labour), Закон за
+  трговските друштва (company law), Закон за данокот на добивка /
+  Закон за данокот на додадена вредност (tax), Закон за финансиска
+  поддршка на инвестициите (foreign investment)
 
 AGPL-3.0-or-later.
+
+## Actuation
+
+`:filing/draft` and `:filing/submit` are the two real-world acts this
+actor performs (preparing/submitting an ЕСЈН portal filing) — neither
+ever auto-commits at any rollout phase, and both always reach a human
+market-entry operator for approval, even when the Market-Entry
+Compliance Governor is otherwise clean (see `marketentry.phase` /
+`marketentry.governor`).
+
+## Flagship governor check
+
+ЗЈН (Закон за јавните набавки, Law on Public Procurement) Член 88(2)(a)
+excludes an economic operator with unpaid taxes, contributions or other
+public charges UNLESS the operator has been GRANTED an approved
+deferred-payment arrangement AND is CURRENTLY paying it regularly — a
+CONJUNCTIVE two-condition cure, not a single "approved" flag. Approval
+alone does not cure the exclusion under North Macedonia's own statute.
+See `marketentry.registry/public-charges-arrears-violation?` and the
+`:public-charges-arrears-uncured` governor rule.
 
 ## Culture catalog
 
